@@ -1,0 +1,41 @@
+
+    .dashboard {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      animation: fadeIn 0.5s ease-out;
+    }
+    .header {
+      margin-bottom: 2rem;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-container h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .header-container h1:hover {
+      transform: scale(1.1);
+    }
+    .income { color: green; }
+    .expenses { color: red; }
+    .balance { color: blue; }
+    .transaction-form, .transaction-history {
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .transaction-form {
+      animation-delay: 0.2s;
+    }
+    .transaction-history {
+      animation-delay: 0.4s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
